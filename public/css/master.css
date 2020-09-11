@@ -42,18 +42,17 @@ footer {
 	border: none;
 }
 .searchbar {
-	float: left;
 	width: 80%;
 	border-bottom: solid thin white;
 }
 
 .form {
+  display: inline-flex;
   width: 50%;
   margin: 0 auto;
 }
 
 .button {
-	float: right;
 	width: 20%;
 }
 
