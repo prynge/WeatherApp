@@ -246,4 +246,4 @@ function submit(id) {
   if (inputLength) getLocation(input);
 }
 
-//getLocationAndWeather();
+getLocation("New York");
