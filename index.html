@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="css/master.css">
+    <!--<link rel="manifest" href="manifest.json" />-->
+  </head>
+  <body>
+
+    
+
+
+    <section class='panel'>
+      <div class="form">
+        <input class='searchbar transparent' id='search1' type='text' placeholder='enter city, country' />
+        <input class='button transparent' id='button' type="submit" onclick="submit('search1');" value='GO' />
+      </div>
+      <div class='group'>
+        <h2 id='dt'></h2>
+        <h1 id= "city">Weather Web App </h1>
+        <p> <a id="temperature" href="#" onclick="switchUnits(); return false;" title ="Click to switch between metric and impreial units"></a><span id = "weather"> by Shazam (tutorial from @fourtonfish)</p>
+        <h3 id='wind'></h3>
+        <h3 id='humidity'></h3>
+      </div>
+      <div class='forecast' id='forecast'></div>
+    </section>
+
+    <section class="panel-mobile">
+      <div class="form">
+        <input class='searchbar transparent' id='search' type='text' placeholder='enter city, country' />
+        <input class='button transparent' id='button' type="submit" onclick="submit('search');" value='GO' />
+      </div>
+      <div class="city">
+        <h1 id= "city2">Weather Web App </h1>
+        <p> <span id='dt2'></span><span id = "weather2"></span></p>
+      </div>
+      <div class="temp">
+        <p>
+          <a id="temperature2" href="#" onclick="switchUnits(); return false;" title ="Click to switch between metric and impreial units"></a>
+        </p>
+      </div>
+      <p class="detail" id="detail"></p>
+      <div class="forecast" id="forecast2"></div>
+    </section>
+
+    <footer>
+      <p>Powered by <a href="http://flickr.com/services/api/">Flickr</a> and <a href="http://openweathermap.org">Openweathermap.org</a>.
+
+      Inspired from a <a href="#">work</a> by <a href="https://twitter.com/steelcitycoach">@steelcitycoach</a>.
+      Used some snippets from a <a href="https://codepen.io/socrates/pen/waYPXx">work</a> by <a href="https://nsocrates.com/">@socrate</a>.
+       <a id="image-source" href="#">Image source</a>.</p>
+
+    </footer>
+
+  <script src="./js/script.js" charset="utf-8"></script>
+  </body>
+</html>
