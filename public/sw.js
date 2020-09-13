@@ -7,7 +7,7 @@ self.addEventListener('fetch', function(event) {
     }));
   }
 
-if (event.request.url == "https://api.openweathermap.org/data/2.5/onecall") {
+  if (event.request.url == "https://api.openweathermap.org/data/2.5/onecall") {
     console.info('responding to OWM fetch with Service Worker! 🤓');
     event.respondWith(fetch(event.request).catch(function(e) {
       var retrievedObject = localStorage.getItem('location');
